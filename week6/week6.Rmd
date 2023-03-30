@@ -52,6 +52,32 @@ In VScode,
 
 -   [week 5 project](https://codesandbox.io/s/week5-s563u2)
 
+# Codesand box 
+
+## Link to Github
+
+-   store your codesandbox project in Github instead of in Codesandbox
+
+### How to 
+
+1.  Open any of your codesandbox project.
+
+2.  Follow the three steps in the below graph.
+
+![](images/link-github.png)
+
+This will popup a new codesandbox github editor for your project which is not saved under your repo in Github with repo name specified in "2".
+
+## Open a Github-linked project
+
+To open a github-linked codesandbox project, you
+
+1.  Copy your github repo link, say <https://github.com/tpemartin/week6-react>
+
+2.  Do the following 4 steps:
+
+![Open a Github project](images/open-github-project.png)
+
 # React App
 
 ## Codesandbox template
