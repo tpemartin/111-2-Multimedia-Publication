@@ -1,0 +1,184 @@
+/* business */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+
+position: relative;
+width: 178px;
+height: 168px;
+
+
+
+/* business-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 100px;
+height: 168px;
+
+border: 1px dashed #0066FF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* category */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 100px;
+height: 50px;
+
+border: 1px dashed rgba(0, 162, 26, 0.63);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* category-image-container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 100px;
+height: 33px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* category-image */
+
+width: 51px;
+height: 33px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* category-image (1) 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+visibility: hidden;
+width: 557px;
+height: 361.5px;
+left: -246.5px;
+top: -160px;
+
+border: 1px solid #F90707;
+
+
+/* category-title */
+
+width: 100px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* business-description */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+width: 100px;
+height: 109px;
+
+border: 1px dashed rgba(0, 162, 26, 0.63);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* name */
+
+width: 100px;
+height: 15px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* description */
+
+width: 100px;
+height: 52px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* keywords */
+
+width: 100px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* business-image */
+
+width: 78px;
+height: 145px;
+
+border: 1px dashed #0066FF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
