@@ -24,7 +24,7 @@ In RStudio, a folder is considered a project if it consists of an `.Rproj` file 
 
 The platform emulates VScode in the cloud. Every template is to create a project. Therefore, the root normally consists of a `package.json` file.
 
--    [package.json example](https://codesandbox.io/s/week6-msuizn?file=/package.json)
+-   [package.json example](https://codesandbox.io/s/week6-msuizn?file=/package.json)
 
 ## package.json
 
@@ -42,8 +42,8 @@ In VScode,
 
 1.  After you download a package, you need to use **Open Folder ...** to open the folder as a **package** (aka as a **project**).
 
-2.   Run in **Terminal\
-    **`npm i` \
+2.  Run in **Terminal\
+    **`npm i`\
     where `npm` stands for Node.js project manager, and `i` means installation. This will install all packages listed in `"dependencies"` and `"devDependencies"`.
 
 > That is another reason why you need to install Node.js.
@@ -52,19 +52,19 @@ In VScode,
 
 -   [week 5 project](https://codesandbox.io/s/week5-s563u2)
 
-# Codesand box 
+# Codesand box
 
 ## Link to Github
 
 -   store your codesandbox project in Github instead of in Codesandbox
 
-### How to 
+### How to
 
 1.  Open any of your codesandbox project.
 
 2.  Follow the three steps in the below graph.
 
-![](images/link-github.png)
+![](https://tpemartin.github.io/111-2-multimedia-publication/week6/images/link-github.png)
 
 This will popup a new codesandbox github editor for your project which is not saved under your repo in Github with repo name specified in "2".
 
@@ -76,12 +76,12 @@ To open a github-linked codesandbox project, you
 
 2.  Do the following 4 steps:
 
-![Open a Github project](images/open-github-project.png)
+![Open a Github project](https://tpemartin.github.io/111-2-multimedia-publication/week6/images/open-github-project.png)
 
 # React App
 
 ## Codesandbox template
 
-![React template](images/react-template.png){width="600"}
+![React template](https://tpemartin.github.io/111-2-multimedia-publication/week6/images/react-template.png){width="600"}
 
 \##
