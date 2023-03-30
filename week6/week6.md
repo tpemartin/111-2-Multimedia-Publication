@@ -73,8 +73,8 @@ In VScode,
 
 1.  After you download a package, you need to use **Open Folder ...** to open the folder as a **package** (aka as a **project**).
 
-2.  Run in **Terminal\
-    **`npm i`\
+2.  Run in **Terminal**\
+    `npm i`\
     where `npm` stands for Node.js project manager, and `i` means installation. This will install all packages listed in `"dependencies"` and `"devDependencies"`.
 
 > That is another reason why you need to install Node.js.
