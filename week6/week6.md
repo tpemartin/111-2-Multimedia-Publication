@@ -4,9 +4,6 @@ output: html_document
 date: "2023-03-30"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Codesandbox
 
