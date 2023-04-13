@@ -86,7 +86,7 @@ Thare some modifications:
 
   * App.css: [#root](https://github.com/tpemartin/111-2-multimedia-publication/blob/2544f956074002e4a61b054bd0da314bfe9e9b28/week8-vite-react/src/App.css#L1), [.App](https://github.com/tpemartin/111-2-multimedia-publication/blob/2544f956074002e4a61b054bd0da314bfe9e9b28/week8-vite-react/src/App.css#L48)
 
-  * index.css: [.navbar](https://github.com/tpemartin/111-2-multimedia-publication/blob/2544f956074002e4a61b054bd0da314bfe9e9b28/week8-vite-react/src/components/Layout/index.css#L23) .main 
+  * index.css: [.navbar](https://github.com/tpemartin/111-2-multimedia-publication/blob/2544f956074002e4a61b054bd0da314bfe9e9b28/week8-vite-react/src/components/Layout/index.css#L23) [.main](https://github.com/tpemartin/111-2-multimedia-publication/blob/68e396d4cf390cf60c9ba173b34bc6be7335ae0f/week8-vite-react/src/components/Layout/index.css#L2) 
 
 ### file path
 
@@ -154,11 +154,3 @@ Suppose we want to create a `<Navbar>` jsx component that looks like:
   * Under somewhere in your `src/` folder create a `Navbar/` folder.
   * Inside `Navbar/` folder create a `index.jsx` file.
 
-### Import errors
-
-```
-[plugin:vite:import-analysis] Failed to resolve import "@mui/icons-material/Restore" from "src/components/Navbar/index.jsx". Does the file exist?
-```
-
-
-### Export default
