@@ -71,6 +71,10 @@ If you follow our class closely, your React project will end up like:
 
   * <https://www.figma.com/file/lMbFHBKni09R2YdpZMNR2T/week8?t=sa7L2ShHXh0pyc7y-6>
 
+### img html
+
+  * <https://www.w3schools.com/tags/tag_img.asp>
+
 ### CSS adjustment
 
 Paste Figma CSS to `Layout/index.css`. However, move `.App`  css to `App.css`
