@@ -4,13 +4,6 @@
   * learn how to create a React project with Vite development enhancing environment
 
 
-## Reference
-
-  * [Installation](https://react.dev/learn/installation)
-
-  * [Add to existing project](https://react.dev/learn/add-react-to-an-existing-project#using-react-for-a-part-of-your-existing-page)
-  * [Scaffolding your first Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
-
 
 ## Vite to create React projects 
 
@@ -153,4 +146,11 @@ Suppose we want to create a `<Navbar>` jsx component that looks like:
 
   * Under somewhere in your `src/` folder create a `Navbar/` folder.
   * Inside `Navbar/` folder create a `index.jsx` file.
+
+# Reference
+
+  * [React Installation](https://react.dev/learn/installation)
+
+  * [Add React to existing project](https://react.dev/learn/add-react-to-an-existing-project#using-react-for-a-part-of-your-existing-page)
+  * [Scaffolding your first Vite project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
