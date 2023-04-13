@@ -1,0 +1,110 @@
+    /* main */
+    .main {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0px;
+    gap: 10px;
+    
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 97px;
+    
+    background: #C0FBF0;
+    
+    
+    }
+    /* navbar */
+    .navbar {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    
+    /* position: absolute; */
+    position: fixed;
+    height: 97px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+       
+    background: #FFFFFF;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+    
+    }
+    /* previous */
+    .previous {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 60px;
+    height: 60px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+    }
+    /* play */
+    .play {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 60px;
+    height: 60px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+    }
+    /* next */
+    .next {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 60px;
+    height: 60px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    }

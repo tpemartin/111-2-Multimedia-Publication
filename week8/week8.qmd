@@ -1,0 +1,51 @@
+---
+title: "week8"
+format: 
+  html:
+    code-fold: true
+editor: visual
+execute: 
+  eval: false
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+# Initiate npm project
+
+So far we use codesandbox to create a template (aka a project), and pull it down locally. Here we are learning how to initiate a project locally and push to the cloud.
+
+## Open project folder
+
+Before you initiate an npm project, **Open folder** where you want you project root to be.
+
+![](images/open-folder.png)
+
+## Terminal: npm init
+
+```{bash}
+## in your terminal
+npm init
+```
+
+-   It will goes through basic setups and an **package.json** file is created. However, you need to create your own entry point program file.
+
+-   The setup is a vanilla node.js project. It does not support **React.js**
