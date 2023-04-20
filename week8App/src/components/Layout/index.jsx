@@ -14,13 +14,13 @@ export function Main({children}){
 export function Navbar() {
     return (
         <div className="navbar">
-            <div className="play">
-                <img src={play} width="40px" />
-            </div>
-            <div className="previous">
+            <div className="navbar-item">
                 <img src={previous} width="40px" />
             </div>
-            <div className="next">
+            <div className="navbar-item">
+                <img src={play} width="40px" />
+            </div>
+            <div className="navbar-item">
                 <img src={next} width="40px" />
             </div>
         </div>

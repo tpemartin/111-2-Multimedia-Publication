@@ -1,73 +1,64 @@
-# Component props and children
+# Component properties
 
-Component function:
+Component functions can take input expressed as 
+
 ```
-export function Component1(){
+function Component({arg1, arg2, children, key}){
 
 }
 ```
 
-  * Used as
-  ```
-  <Component1/>
-  ```
+  * argument names can be arbitrary, except some like `children` and `key`.
 
-Component function:
+## `children` property
+
+If there is `children` property, the component function can be used as:
 ```
-export function Component2({children}){
-  return (
-   <div ...>
-      :
-      {children}
-   </div>
-
-  )
-}
+<Component>
+...
+</Component>
 ```
+where `...` can be other jsx elements.
 
-  * Used as
-  ```
-  <Component2>
-    <Other Component/>
-  </Component2>
-  ```
+## most arguments
 
-Component function:
+Most arguments are treated as element attributes. To create an element,
 ```
-export function Component3({arg1, arg2, children}){
-  return (
-   <div ...>
-      :
-      {children}
-   </div>
-
-  )
-}
+<Component arg1 = ... arg2 = ...>
+</Component>
 ```
-
-  * Used as
-  ```
-  <Component3 arg1=...  arg2=...>
-  :
-    <Other Component/>
-  </Component3>
-  ```
+where `...` is the argument value to be assigned. If `...` is an JS expression, it must be surrounded by curly brackets `{}`, i.e. 
+```
+<Component arg1= {some js expression} arg2={some js expression}>
+</Component>
+```
 
 ## Custom Navbar
 
   * Build a footer navigation bar that allows developers to put in arbitrary icons.
   * learn how to import icons from Material UI (MUI)
-  
-### current
 
-
+Component functions:
 ```
-<Navbar/>
+export function NavbarCustom({children}) {
+    return (
+        <div className="navbar">
+            {children}
+        </div>
+
+    )
+}
+export function NavbarItem({children}) {
+    return (
+        <div className="navbar-item">
+            {children}
+        </div>
+
+    )
+}
 ```
 
-![week8 navbar](img/navbar-week8.png)
-
-### custom
+Usage
 
 ```
 import PlayIcon from '@mui/icons-material/PlayArrow';
@@ -87,6 +78,23 @@ import PreviousIcon from '@mui/icons-material/FastRewind';
 </NavbarCustom>
 ```
 
+is the same as
+
+```
+<div className="navbar">
+  <div className="navbar-item">
+    <PreviousIcon/>
+  </div>
+  <div className="navbar-item">
+    <PlayIcon/>
+  </div>
+  <div className="navbar-item">
+     <NextIcon/>
+  </div>
+</div>
+```
+  
+
   * Icons are imported from MUI. Developers can put in their own design as well.
 
 ### MUI icons
@@ -102,9 +110,9 @@ import PreviousIcon from '@mui/icons-material/FastRewind';
   * <https://mui.com/material-ui/material-icons/>
 
 
-# Card
+## Card
 
-## Stamp
+### Stamp
 
   * <https://codepen.io/orhanveli/pen/nEVqvv>
 
@@ -112,74 +120,48 @@ import PreviousIcon from '@mui/icons-material/FastRewind';
   
   * [SVG filter](https://dev.to/photostockedit1/change-color-of-svgs-images-with-css-filter-53h5)
 
-# Rendering lists
-
-  * <https://react.dev/learn#rendering-lists>
-
-## Array 
-
-Similar to R list without element names. Usage:
-
 ```
-arrayExample = [v1, v2, v3]
-```
-  
-  * element values `(v1, v2, v3)` do NOT have to be of the same type/class.
+export default function Stamp({ imgSrc }) {
+  return (
+    <div className="stamp">
+      <Image
+        duration={0}
+        src={imgSrc}
+      />
+    </div>
 
-```
-const products = [
-  { title: 'Cabbage', id: 1 },
-  { title: 'Garlic', id: 2 },
-  { title: 'Apple', id: 3 },
-];
+  )
+}
 ```
 
-## Object
-
-Similar to R list with element names.
-```
-objectExample = { title: 'Cabbage', id: 1 }
-```
-
-  * used to described SINGLE observation.
-  * All element values must have names.
-
-
-# Material Design UI (MUI)
-
-## [MUI installation](https://mui.com/material-ui/getting-started/installation/)
+Usage 
 
 ```
-npm install @mui/material @emotion/react @emotion/styled
+<Stamp imgSrc="https://cms-carrier.ntpu.edu.tw/uploads/8d03554e2e3a4f8dacbcad536cf70bfc.jpg">
 ```
 
-## Buttons component
-
-### Usage of MUI
-
-  * [Basic buttons](https://mui.com/material-ui/react-button/)
-
-The usage is divided into two parts:
-
-  * import the component.
-  * write its jsx element code.
-
-For example, suppose we want to use `<BottomNavigation>`, `<BottomNavigationAction>` elements as
-```
-<BottomNavigation showLabels>
-            <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-            <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-            <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-        </BottomNavigation>
+### Card
 
 ```
+export default function Card({ user }) {
+  const { name, grade, imgSrc, wish } = user
+  ...
+}
+```
 
+Usage
 
-## Navbar component
+```
+const user = {
+        name: "王小明",
+        grade: "大一",
+        imgSrc: "https://cms-carrier.ntpu.edu.tw/uploads/8d03554e2e3a4f8dacbcad536cf70bfc.jpg",
+        wish: "New beginnings, new chapters; new life and new endeavors. My friend, I am really proud of you! It feels amazing to share this happiness and excitement with you. Congratulations on graduating!"
+    }
 
-Suppose we want to create a `<Navbar>` jsx component that looks like:
+<Card user = {user}/>
+```
 
-  * [Bottom Navigation](https://mui.com/material-ui/react-bottom-navigation/#bottom-navigation)
+#### destructure an object
 
-  * Under somewhere in your `src/` folder create a `Navbar/` folder.
-  * Inside `Navbar/` folder create a `index.jsx` file.
+  * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>

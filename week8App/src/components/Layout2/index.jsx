@@ -28,8 +28,3 @@ export function Navbar() {
     )
 }
 
-export function Card({children}){
-    return (
-        <div className="card">{children}</div>
-    )
-}

@@ -4,11 +4,10 @@ import "./index.css"
 import ntpu_stone from "./ntpu-stone.svg"
 import "./wish.css"
 export default function Card({ user }) {
-  const {name, grade, imgSrc} = user
+  const { name, grade, imgSrc, wish } = user
   return (
     <div className="card">
       <div className="card-content">
-        <div className="card-background" />
         <div class="sender">
           <div class="label text-shadow">Sender:</div>
           <div class="sender-info">
@@ -21,8 +20,6 @@ export default function Card({ user }) {
           </div>
         </div>
         <div className="stamp-holder">
-
-
           <Stamp imgSrc={imgSrc} />
           <div className="seal">
 
@@ -30,10 +27,10 @@ export default function Card({ user }) {
           </div>
         </div>
         <div className="wish">
-  <div className="right-quotation">”</div>
-  <div className="left-quotation">“</div>
-  <div className="wish-text">New beginnings, new chapters; new life and new endeavors. My friend, I am really proud of you! It feels amazing to share this happiness and excitement with you. Congratulations on graduating!"</div>
-</div>
+          <div className="right-quotation">”</div>
+          <div className="left-quotation">“</div>
+          <div className="wish-text">{wish}</div>
+        </div>
 
       </div>
     </div>
