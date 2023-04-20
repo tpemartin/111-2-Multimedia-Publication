@@ -1,12 +1,15 @@
 import * as React from 'react';
-import {Main} from "../components/Layout2";
+import { Main } from "../components/Layout2";
 import { NavbarCustom, NavbarItem } from "../components/NavbarCustom";
 import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
 import Card from '../components/Card';
-
+// import Card from '../components/Card2';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import { IconButton } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function App() {
     const user = {
@@ -20,23 +23,30 @@ export default function App() {
         grade: "Senior",
         imgSrc: "https://cc.ntpu.edu.tw/images/2018/12/04/image.jpg",
         wish: "Happy graduation. I bless you with all that you need to earn many more achievements and facts in life ahead. Congratulations and well done. We're so happy that you've achieved this great milestone- Wishing you great success with your dreams and career. It's official: you're now too cool for school"
-    
+
     }
 
     return (
         <div className="App">
             <Main>
-                <Card user={user2}/>
+                <Card user={user} />
             </Main>
             <NavbarCustom>
                 <NavbarItem>
-                    <PreviousIcon/>
+                    <IconButton>
+                        <PreviousIcon />
+                    </IconButton>
                 </NavbarItem>
                 <NavbarItem>
-                    <PlayIcon/>
+                    {/* <PlayIcon/> */}
+                    <IconButton>
+                        <PlayIcon />
+                    </IconButton>
                 </NavbarItem>
                 <NavbarItem>
-                    <NextIcon/>
+                    <IconButton>
+                        <NextIcon />
+                    </IconButton>
                 </NavbarItem>
             </NavbarCustom>
         </div>
