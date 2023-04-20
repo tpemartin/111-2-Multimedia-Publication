@@ -194,4 +194,3 @@ person[1] # get Error
 person["name"] # get Henry
 person.name # get Henry
 ```
-
