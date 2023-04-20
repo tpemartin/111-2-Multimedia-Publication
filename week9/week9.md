@@ -165,3 +165,33 @@ const user = {
 #### destructure an object
 
   * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>
+
+# Set of values in JS
+
+In R, set of values is vector, such as `c(...)` (atomic vector), `list(...)` (list vector). Atomic vector has to have all values of **THE SAME** type.
+
+In JS, set of values is not required to have the same type of elements inside.
+
+  * Array
+
+```
+var arrayExample = [value1, value2, value3]
+```
+
+  * Object: set of **features** or **interfaces** or **key**
+  
+```
+var person = { name: "Henry", age: 32, married: false}
+```
+  
+  * like `list` in R with element names.
+
+> Array elements have **position** concept, but not object elements.
+
+```
+arrayExample[1] # get value2
+person[1] # get Error
+person["name"] # get Henry
+person.name # get Henry
+```
+
