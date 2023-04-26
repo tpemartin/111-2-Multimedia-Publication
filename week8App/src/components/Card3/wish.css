@@ -1,0 +1,30 @@
+/* wish */
+.wish{
+width: 305px;
+height: 446px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* wish-text */
+.wish-text{
+position: absolute;
+left: 71px;
+right: 73px;
+top: 357px;
+bottom: 151px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+border: 0.3px solid #FFFFFF;
+}

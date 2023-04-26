@@ -1,0 +1,225 @@
+/* card */
+.card {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: relative;
+    width: 416px;
+    height: 683px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+    
+    }
+    /* card-content */
+    .card-content {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 15px;
+    
+    width: 416px;
+    height: 683px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    
+    
+    }
+    /* sender-info */
+    .sender-info {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px;
+    gap: 41px;
+    
+    width: 386px;
+    height: 113px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    
+    
+    }
+    /* group */
+    .group {
+    
+    width: 258px;
+    height: 73px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+    }
+    /* sender-name */
+    .sender-name {
+    
+    position: absolute;
+    width: 180px;
+    height: 39px;
+    left: 88px;
+    top: 46px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    
+    }
+    /* sender-grade */
+    .sender-grade {
+    
+    position: absolute;
+    width: 138px;
+    height: 24px;
+    left: 130px;
+    top: 85px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #A9A9A9;
+    
+    
+    
+    }
+    /* Avator */
+    .Avator {
+    
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    left: 273px;
+    top: 40px;
+    
+    background: #D9D9D9;
+    
+    
+    }
+    /* card-wish */
+    .card-wish {
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 0px 0px;
+    gap: 115px;
+    
+    width: 386px;
+    height: 494px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    
+    
+    }
+    /* wish */
+    .wish {
+    
+    width: 305px;
+    height: 446px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+    }
+    /* wish-text */
+    .wish-text {
+    
+    position: absolute;
+    left: 62.5px;
+    right: 64.5px;
+    top: 357px;
+    bottom: 60px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+    border: 0.3px solid #FFFFFF;
+    
+    
+    }
+    /* Picture */
+    .Picture {
+    
+    position: absolute;
+    width: 305px;
+    height: 305px;
+    left: 40.5px;
+    top: 38px;
+    
+    background: #D9D9D9;
+    
+    
+    }
+    /* time */
+    .time {
+    
+    position: absolute;
+    width: 132px;
+    height: 24px;
+    left: 213.5px;
+    top: 460px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+    }

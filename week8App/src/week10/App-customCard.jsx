@@ -5,17 +5,22 @@ import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../components/Card';
-// import Card from '../components/Card2';
+// import Card from '../components/Card';
+import Card from '../components/Card2';
+// import Card from '../components/Card3';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import { IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import appConfig from "../appConfig.json"
+
+
+
 
 export default function App() {
     const user = {
         name: "王小明",
         grade: "大一",
-        imgSrc: "https://cms-carrier.ntpu.edu.tw/uploads/8d03554e2e3a4f8dacbcad536cf70bfc.jpg",
+        imgSrc: "https://lh5.googleusercontent.com/vjtfNhvB35onj7GGr_UWBIUoQ37P55IhxcRV90S5LCDnjbuEB0peIzhLvNN94kdDN0ujEF3vBwXKmV8=s350",
         wish: "New beginnings, new chapters; new life and new endeavors. My friend, I am really proud of you! It feels amazing to share this happiness and excitement with you. Congratulations on graduating!"
     }
     const user2 = {
@@ -26,11 +31,14 @@ export default function App() {
 
     }
 
+    console.log(appConfig)
+
     return (
         <div className="App">
             <Main>
-                <Card user={user2} />
+                <Card user={user} />
             </Main>
+            
             <NavbarCustom>
                 <NavbarItem>
                     <IconButton>
@@ -48,8 +56,7 @@ export default function App() {
                         <NextIcon />
                     </IconButton>
                 </NavbarItem>
-                </NavbarCustom>
-            
+            </NavbarCustom>
         </div>
     )
 }

@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom/client'
 // import App from './App'
 import './index.css'
 /* week9 */
-// import App from './week9/App-withCard'
-// import App from './week9/App-withCard-and-NavbarCustom'
 import App from './week9/App-customCard'
 // import App from "./week9/App-stamp"
-
+// import App from "./week10/App-customCard"
+// import App from "./week10/App-slide"
+// import App from "./week9/App-test"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
