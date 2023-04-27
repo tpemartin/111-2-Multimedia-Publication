@@ -48,6 +48,28 @@ We can generate three cards:
 <Card user={users[2]} />
 ```
 
+
+## Arrow functions
+
+Method 1:
+```
+function funname(...){
+    ...
+}
+```
+
+Method 2:
+```
+funname = function(...){
+    ...
+}
+```
+
+Method 3: Arrow
+```
+funname =(...) => {...}
+```
+
 ## Array.map 
 
   * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map>
@@ -62,7 +84,6 @@ example.map(
 ```
 
 ```{r}
-
 example |>
   purrr::map(
     function(e){
@@ -70,3 +91,22 @@ example |>
     }
   )
 ```
+
+```
+# anonymous function
+example.map(
+    function(e, i){
+       return "This is "+e
+    }
+)
+
+# function with names
+function funname(e, i){
+       return "This is "+e
+    }
+example.map(funname)
+```
+
+## Rendering list of components
+
+  * <https://react.dev/learn#rendering-lists>
