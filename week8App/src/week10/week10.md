@@ -110,3 +110,29 @@ example.map(funname)
 ## Rendering list of components
 
   * <https://react.dev/learn#rendering-lists>
+
+# Mutable
+
+```
+function getUserPositionIndex(user0) {
+    user0 = dataJson[0]
+    var pos = Object()
+    user0.map(
+        (e, i) => {
+            pos[e] = i
+        }
+    )
+    pos.imgSrc = pos.ThumbnailLink
+    pos.name = pos.Name
+    pos.grade = pos.Grade
+    pos.wish = pos.Wish
+    return pos
+}
+```
+
+> Set of values, like array and object, is mutable. But primitive values are not.
+
+```
+a=3
+b=true
+```

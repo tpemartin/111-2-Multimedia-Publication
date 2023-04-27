@@ -13,24 +13,24 @@ import Image from "mui-image"
 
 
 export default function App() {
-    
+
+    console.log(dataJson)
+
     const users = convertUsersToArrayOfObject(dataJson)
-    
+
+    console.log(users)
+
     const cards = users.map((e, i) => {
-        return(
-            <Card user={e} key={i}/>
+        return (
+            <Card user={e} key={i} />
         )
     })
-    
 
     return (
         <div className="App">
             <Main>
-                {/* <Image src={users[0].imgSrc} duration={0}/> */}
                 {cards}
-                {/* <Card user={user} /> */}
             </Main>
-            
             <NavbarCustom>
                 <NavbarItem>
                     <IconButton>
@@ -49,15 +49,16 @@ export default function App() {
                     </IconButton>
                 </NavbarItem>
             </NavbarCustom>
+
         </div>
     )
 }
 
-function convertUsersToArrayOfObject(users){
+function convertUsersToArrayOfObject(users) {
     const pos = getUserPositionIndex(users[0])
-    
+
     const usersArrayOfObject = users.map(
-        (user)=>{
+        (user) => {
             return getUser(user, pos)
         }
     )
@@ -65,21 +66,36 @@ function convertUsersToArrayOfObject(users){
     return usersArrayOfObject
 }
 
-function getUser(targetUser, pos){
+function getUser(targetUser, pos) {
     return (
         {
             name: targetUser[pos.name],
-            grade: targetUser[pos.grade], 
+            grade: targetUser[pos.grade],
             imgSrc: targetUser[pos.imgSrc],
             wish: targetUser[pos.wish]
         }
     )
 }
-function getUserPositionIndex(user0){
+function getUserPositionIndex(user0) {
     var pos = Object()
     user0.map(
-        (e,i)=>{
-            pos[e]=i
+        (e, i) => {
+            pos[e] = i
+        }
+    )
+    pos.imgSrc = pos.ThumbnailLink
+    pos.name = pos.Name
+    pos.grade = pos.Grade
+    pos.wish = pos.Wish
+    return pos
+}
+
+function test(){
+    user0 = ['Timestamp', 'Email Address', 'Name', 'Photo', 'Grade', 'Wish', 'ThumbnailLink']
+    var pos = Object()
+    user0.map(
+        (e, i) => {
+            pos[e] = i
         }
     )
     pos.imgSrc = pos.ThumbnailLink
