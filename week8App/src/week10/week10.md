@@ -4,6 +4,9 @@ Users data that we will get from doing some https visit of our app backend datab
 
   * <https://script.google.com/macros/s/AKfycbxbI5-XmdmEbm9H2O5Qz40mt0_omqy4sHJhUzsch3r5IPzENGSXE2eW__GKddNS-kF7/exec>
 
+The database is created by a google form database aka its associated spreadsheet:
+
+   * <https://docs.google.com/forms/d/e/1FAIpQLSf2uefS9Q6o16R35FbHbvjZbBlkMysjLdQw6nMzYJ2mkF4sdA/viewform>
 
 # Users
 
