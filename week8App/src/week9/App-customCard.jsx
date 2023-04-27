@@ -21,7 +21,7 @@ export default function App() {
     const user2 = {
         name: "Henry",
         grade: "Senior",
-        imgSrc: "https://lh4.googleusercontent.com/_3O0JeRb7LaCVe-puCeBP6AxiNfVb7aZIMaQFgLu2s-oFwpgJ-k5N2d4znjJHXHFoNCYxm_EfyxpQgg=s350",
+        imgSrc: "https://lh3.googleusercontent.com/v6_hcmynGtqU4bWBQC1SBPCU4PwFQFKAIj85C5DXgGsAac5J2blqWt4BVlTYo6zWYsl6Ad1VBhUonjY=s350",
         wish: "Happy graduation. I bless you with all that you need to earn many more achievements and facts in life ahead. Congratulations and well done. We're so happy that you've achieved this great milestone- Wishing you great success with your dreams and career. It's official: you're now too cool for school"
 
     }
@@ -48,7 +48,7 @@ export default function App() {
                         <NextIcon />
                     </IconButton>
                 </NavbarItem>
-                </NavbarCustom>
+            </NavbarCustom>
             
         </div>
     )
