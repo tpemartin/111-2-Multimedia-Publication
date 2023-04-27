@@ -1,3 +1,9 @@
+# data.json
+
+Users data that we will get from doing some https visit of our app backend database entry point.
+
+  * <https://script.google.com/macros/s/AKfycbxbI5-XmdmEbm9H2O5Qz40mt0_omqy4sHJhUzsch3r5IPzENGSXE2eW__GKddNS-kF7/exec>
+
 
 # Users
 
