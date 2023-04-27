@@ -84,6 +84,7 @@ example.map(
 ```
 
 ```{r}
+# in R
 example |>
   purrr::map(
     function(e){

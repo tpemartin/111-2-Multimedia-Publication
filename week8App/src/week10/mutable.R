@@ -6,6 +6,7 @@ print(indices)
 
 indices |>
   purrr::map(~{
+    browser()
     example[elements[[.x]]] <- .x
   }) 
 
