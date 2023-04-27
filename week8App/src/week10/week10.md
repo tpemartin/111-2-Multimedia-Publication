@@ -22,3 +22,5 @@ pos.name = pos.Name
 pos.grade = pos.Grade
 pos.wish = pos.Wish
 ```
+
+  * [React rendering list](https://react.dev/learn#rendering-lists)
