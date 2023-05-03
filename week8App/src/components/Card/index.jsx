@@ -4,10 +4,10 @@ import "./index.css"
 import ntpu_stone from "./ntpu-stone.svg"
 import "./wish.css"
 
-export default function Card({ user }) {
+export default function Card({ user, style }) {
   const { name, grade, imgSrc, wish } = user
   return (
-    <div className="card">
+    <div className="card" style={style}>
       <div className="card-content">
          <Sender name={name} grade={grade}/>
          <StampHolder imgSrc={imgSrc}/>
