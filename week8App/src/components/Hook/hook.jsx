@@ -21,8 +21,9 @@ export default function App() {
     useEffect(() => {
         setState("loading");
 
+        /* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous */
         async function fetchData() {
-            await fetch(
+          fetch(
                 "https://script.google.com/macros/s/AKfycbxbI5-XmdmEbm9H2O5Qz40mt0_omqy4sHJhUzsch3r5IPzENGSXE2eW__GKddNS-kF7/exec"
             ).then(response => response.json())
                 .then(response => {
